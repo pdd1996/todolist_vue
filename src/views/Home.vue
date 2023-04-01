@@ -5,6 +5,7 @@
         <div>
           <span class="today">我的一天</span>
           <span class="time" id="time">时间</span>
+          <xxx-button type="danger">点击报名</xxx-button>
         </div>
       </div>
       <div class="content">
@@ -25,9 +26,14 @@
 
 <script>
 // @ is an alias to /src
+import { Button } from "xixixi-ui";
+import "xixixi-ui/dist/xixixi-ui.css";
 
 export default {
   name: "Home",
+  components: {
+    "xxx-button": Button,
+  },
 };
 </script>
 
