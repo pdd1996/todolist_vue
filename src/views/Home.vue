@@ -10,13 +10,8 @@
           <span class="time" id="time">时间</span>
         </el-header>
         <el-main>
-          <el-table
-            :data="tableData"
-            style="width: 100%">
-            <el-table-column
-              prop="date"
-              label="日期"
-              width="180">
+          <el-table :data="tableData" style="width: 100%">
+            <el-table-column prop="date" label="日期" width="180">
             </el-table-column>
           </el-table>
         </el-main>
@@ -37,14 +32,13 @@ export default {
   name: "Home",
   data() {
     return {
-      tableData: []
-    }
-  }
+      tableData: [],
+    };
+  },
 };
 </script>
 
 <style scoped lang="less">
-
 .container {
   height: 100vh;
 }
@@ -61,5 +55,4 @@ export default {
   border-radius: 4px;
   min-height: 36px;
 }
-
 </style>
